@@ -9,6 +9,8 @@
 
 function tecla(e){
 
+    document.getElementById("img_win").style.display = "none";
+
     if (gameCnt > 0) {
         // declare var for computer key random
         kyComp = Math.floor(Math.random() * 255);
@@ -29,8 +31,12 @@ function tecla(e){
         gameCnt--;
         document.getElementById("gamesLeft_cont").innerText = "Games left to play: " + gameCnt;
         }
-    }
 
+        else if(gameCnt = 0 && contWin > contLos){
+            document.getElementById("img_win").style.display = "inline-block";
+        }
+
+}
 
 
 

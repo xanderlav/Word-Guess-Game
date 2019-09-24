@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>This is my game! </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </head>
-<body>
-    <script >
-    </script>
+
+<body onkeypress="tecla(event)">
+
+    <h1>Guess what letter I'm thinking of</h1>
+    
+    <section id="left_img">
+        <img src="assets/images/letras.jpg" height="200" width="250">
+    </section>
+
+
+    <section id="left_cont">
+        <div id="winner_cont">Wins so far: </div>
+    </section>
+
+    <section id="right_cont">
+        <div id="looser_cont">Defeats so far: </div>
+    </section>
+
+    <hr>
+
+    <div id="yourGuesses_cont">Your Guesses so far: </div>
+    
+    <hr>
+
+    <section id="left_img">
+    </section>
+    <section id="right_cont">
+        <div id="gamesLeft_cont">Games left to play: </div>
+    </section>
+
 </body>
 </html>
